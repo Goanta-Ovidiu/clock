@@ -14,7 +14,7 @@ body {
 }
 
 body {
-  background-image: linear-gradient(yellow, red, blue);
+  background-color: lightblue;
   margin: 0;
   display: flex;
   justify-content: center;
