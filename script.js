@@ -31,7 +31,7 @@ function formatNumberString(n) {
 
 function sunChangeMoon(e, x) {
   const stars = document.querySelector(".stars");
-  if (e >= 18 || e <= 7) {
+  if (e >= 18 || e < 7) {
     x.style.display = "block";
     stars.style.display = "visible";
   } else {
@@ -43,7 +43,7 @@ function sunChangeSun(e, x) {
   const bodyBackground = document.querySelector("body");
   const cloud = document.querySelector(".cloud");
   const cloudDown = document.querySelector(".cloud_down");
-  if (e <= 18 && e >= 7) {
+  if (e < 18 && e >= 7) {
     x.style.display = "block";
     bodyBackground.style.backgroundColor = "blue";
     cloud.style.display = "visible";
